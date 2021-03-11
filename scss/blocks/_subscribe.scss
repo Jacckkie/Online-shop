@@ -1,0 +1,67 @@
+.subscribe {
+    min-height:448px;
+    background-image:url(../img/photo-subscribe.png);
+
+    .subscribe__content {
+        min-height:448px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    
+    .subscribe__info {
+        min-height:225px;
+        width:360px;
+        @include flex-center();        
+        flex-direction:column;
+    }
+    
+    .subscribe__text {
+        @include font(20px, 24px, 400, italic);        
+        text-align:center;
+        color:$features-bg;
+        margin:30px 0 0;
+    }
+    
+    .subscribe__heading {
+        @include font(24px, 40px, 700, normal);        
+        text-align:center;
+        text-transform: uppercase;
+    }
+    
+    .subscribe__description {
+        @include font(18px, 30px, 400, normal);       
+        text-align:center;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+    }
+    
+    .subscribe__form {
+        position:relative;
+        width:356px;
+    }
+    
+    .subscribe__input {    
+        width: 73%;
+        height: 49px;
+        border-color: transparent;
+        border-radius: 30px 0 0 30px;
+        background-color: $input-bg-grey;
+        padding-left: 22px;
+    }
+    
+    .subscribe__button {
+        position: absolute;
+        right: -7px;
+        bottom: 1px;
+        height: 52px;
+        border-color: transparent;
+        border-radius: 0 30px 30px 0;
+        padding: 16px;
+        background-color: $dark-pink;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+    }
+}
+

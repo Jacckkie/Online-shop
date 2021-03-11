@@ -1,0 +1,13 @@
+.breadcrumb {
+    background-color: $breadcrumb-gray;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__heading {
+    @include font(24px, 29px, 400, normal)
+    text-transform: uppercase;
+    color:$dark-pink;
+    
+}

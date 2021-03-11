@@ -1,0 +1,39 @@
+.footer__info {
+    background-color: $features-bg;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+}
+
+.copy__item--a {
+    color: $features-name-grey;
+    text-decoration: none;
+}
+
+.socials {
+    display:flex;
+    justify-content:space-between;
+    width:148px;
+}
+
+.social__icon {
+    fill: $white;
+    }
+
+.socials__item:hover .social__icon,
+.socials__item:focus .social__icon {
+    fill: $dark-pink;
+}
+
+.social__icon-inner {
+    fill: $black;
+}
+
+.social__item:hover .social__icon-inner,
+.socials__item:focus .social__icon-inner {
+fill: $white;
+}
