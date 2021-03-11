@@ -684,5 +684,17 @@ fieldset {
   font-weight: 300;
   font-style: normal;
   margin: 0 0 16px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.benefits .benefits__item::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 16px;
+  left: 0px;
+  top: 8px;
+  background-image: url(../img/check-mark.svg);
 }
 /*# sourceMappingURL=style.css.map */
