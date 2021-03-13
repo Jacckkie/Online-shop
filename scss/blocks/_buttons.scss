@@ -8,6 +8,14 @@
         padding:14.5px 38.5px;
         margin:0 auto 95px;
     }
+
+    .button__button:hover {
+        color:$white;
+        border:1px solid $dark-pink;
+        background-color:$dark-pink;
+        padding:14.5px 38.5px;
+        margin:0 auto 95px;
+    }
 }
 
 .join {
