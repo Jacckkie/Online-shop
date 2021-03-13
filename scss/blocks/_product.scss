@@ -1,0 +1,104 @@
+.product__heading { 
+    @include font(30px, 36px, 400, normal);
+    text-align:center;   
+}
+
+.product__paragraph {
+    font-size:14px;
+    line-height:17px;
+    color:$text-grey;
+    text-align:center;
+    margin:6px 0 48px;
+}
+
+.product__list {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:0 0 48px;  
+    
+    .product__item {
+        min-height:581px;
+        width:360px;    
+        background-color:$grey;
+        box-sizing:border-box;
+    
+        .product__item-wrapper {
+            position: relative;
+            width:360px;
+            height: 420px;
+            margin:0 0 24px;
+
+            .product__img {
+                margin:0 0 24px;
+            }
+
+            .product__img:hover + .product__overlay {
+                display: block;
+            }
+            
+            .product__overlay {
+                display: block;
+                display:none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(58, 56, 56, 0.86);
+                top: 0;
+            }
+
+            .product__overlay:hover {
+                display: block;
+            }
+
+            .product__button {
+                position: absolute;
+                border: 1px solid $white;
+                width: 138px;
+                height:43px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 14px;
+                text-align: center;
+                line-height: 17px;
+                color: $white;    
+                display: flex;
+                align-items: center;
+                padding-left: 13px;
+            }
+            
+            .product__button:before {
+                content: '';
+                width: 26px;
+                height: 24px;
+                background-image: url(../img/purchase-icon.svg);
+                margin-right: 11px;
+            }
+
+        }
+      
+        .product__name {
+            font-size:13px;
+            line-height:16px;
+            text-align:left;
+            color:$black;
+            text-transform:uppercase;
+            margin:0 18px;
+        }
+        
+        .product__paragraph--card {
+            @include font(14px, 17px, 300, normal);
+            color:$text-dark-grey;
+            text-align:left;
+            width:315px;
+            margin:13px 18px 18px;
+        }
+        
+        .product__price {
+            color:$dark-pink;
+            margin:0 18px;
+        }
+    }
+}
+

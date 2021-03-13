@@ -1,0 +1,32 @@
+.benefits {
+    flex-grow: 1;
+    margin-left: 128px;
+
+    .benefits__heading {
+        @include font(24px, 29px, 300, normal);
+        text-transform: uppercase;
+    }
+
+    .benefits__text {
+        @include font(24px, 29px, 300, normal);
+        margin: 22px 0 21px;
+    }
+
+    .benefits__item {
+        @include font(24px, 29px, 300, normal);
+        margin: 0 0 16px;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    .benefits__item::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 16px;
+        left: 0px;
+        top: 8px;
+        background-image: url(../img/check-mark.svg);
+    }
+
+}

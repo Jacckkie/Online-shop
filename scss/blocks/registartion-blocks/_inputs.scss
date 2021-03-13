@@ -1,0 +1,22 @@
+input,
+label {
+    display: block;
+}
+
+input {
+    margin: 21px 0 0;
+    width: 359px;
+    height: 44px;
+    border: 1px solid $input-border-gray;
+}
+
+::-webkit-input-placeholder {color:$placeholder_text; @include font(13px, 16px, 400, normal); padding: 12.5px 16.5px 15.5px;}
+::-moz-placeholder          {color:$placeholder_text; @include font(13px, 16px, 400, normal); padding: 12.5px 16.5px 15.5px;}
+:-moz-placeholder           {color:$placeholder_text; @include font(13px, 16px, 400, normal); padding: 12.5px 16.5px 15.5px;}
+:-ms-input-placeholder      {color:$placeholder_text; @include font(13px, 16px, 400, normal); padding: 12.5px 16.5px 15.5px;}
+
+.radio {
+    width: 17px;
+    height: 17px;
+    margin: 0 10px;
+}

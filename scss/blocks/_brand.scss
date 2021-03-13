@@ -1,0 +1,36 @@
+.brand {
+    display:flex;
+    &__title-wrapper {
+        display:flex;
+        align-items:center;
+        flex-grow:1;
+        padding:0 0 0 91px;
+        background-color:$pink;   
+    }
+    
+    .brand__title {
+        position: relative;
+        @include font(48px, 58px, 900, normal);
+        text-transform:uppercase;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 104px;
+            background-color: $dark-pink;
+            left: -37px;
+        }
+    }
+    
+    &__subtitle {
+        display:block;
+        @include font(37px, 44px, 700, normal);
+        text-align:left;
+
+        &--pink {
+            color:$dark-pink;
+        }
+    }
+}
+
