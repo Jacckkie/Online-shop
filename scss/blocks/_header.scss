@@ -2,14 +2,34 @@
     background-color:$dark-blue;
     position: relative;
 
-    &__navigation {
+
+    &__navigation-wrp {
         display: block;
-        display:none;
-        position: absolute;
+        display:none; 
+        position: absolute;       
+        background-color: transparent;
+        width: 600px;
+        right: 0;
+        bottom: -765px;
+        min-height: 764px;
+    }
+
+    &__navigation-wrp:hover {
+        display: block;
+    }
+
+    &__controls-burger:hover + &__navigation-wrp {
+        display: block;
+    }
+
+    &__navigation {
+        // display: block;
+        // display:none; 
+        position: absolute;       
         background-color: $white;
         width: 232px;
         right: 0;
-        bottom: -765px;
+        top: 0px;
         min-height: 764px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         }
@@ -57,16 +77,20 @@
         &__logo {
             margin:0 10px 0 0;
         }
+
+        &__controls {
+            display: flex;
+            height: 75px;
+            align-items: center;
+        }
         
         &__controls-burger {
+            height: 100%;
             background-color:transparent;
             border:none;
             margin:0 34px 0 0;
         }
-        
-        &__controls-burger:hover + .header__navigation {
-            display: block;
-        }
+    
         
         &__controls-profile {
             margin:0 34px 0 0;
