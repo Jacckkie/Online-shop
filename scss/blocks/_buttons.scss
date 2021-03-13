@@ -1,0 +1,22 @@
+.button {
+    display:flex;
+    justify-content:center;
+    .button__button {
+        color:$dark-pink;
+        border:1px solid $dark-pink;
+        background-color:$white;
+        padding:14.5px 38.5px;
+        margin:0 auto 95px;
+    }
+}
+
+.join {
+    height: 50px;
+    width: 167px;
+    background-color: $dark-pink;
+    color: $white;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: none;
+}
+
