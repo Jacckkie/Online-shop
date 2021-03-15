@@ -7,6 +7,11 @@
         background-color:$white;
         padding:14.5px 38.5px;
         margin:0 auto 95px;
+        outline: none;
+
+        @include tablet {
+            margin:0 auto 65px;
+        }
     }
 
     .button__button:hover {
@@ -21,10 +26,22 @@
 .join {
     height: 50px;
     width: 167px;
+    background-color: $white;
+    color: $dark-pink;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: 1px solid $dark-pink;
+    outline: none;
+}
+
+.join:hover {
+    height: 50px;
+    width: 167px;
     background-color: $dark-pink;
     color: $white;
     padding: 16px 29px 17px;
     text-transform: uppercase;
     border: none;
+    outline: none;
 }
 

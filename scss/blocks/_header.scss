@@ -89,10 +89,25 @@
             background-color:transparent;
             border:none;
             margin:0 34px 0 0;
+            outline: none;
+
+            @include mobile {
+                margin: 0;
+            }
         }
     
         
         &__controls-profile {
             margin:0 34px 0 0;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &__controls-basket {
+            @include mobile {
+                display: none;
+            }
         }
 }

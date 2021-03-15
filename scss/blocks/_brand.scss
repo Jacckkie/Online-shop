@@ -7,6 +7,29 @@
         padding:0 0 0 91px;
         background-color:$pink;   
     }
+
+    .brand__img {
+        @include tablet {
+            width: 50%;
+            height: auto;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .brand__title-wrapper {
+        @include tablet {
+            padding: 0 0 0 56px;
+        }
+
+        @include mobile {
+            min-height: 363px;
+            padding: 0px;
+            justify-content: center;
+        }
+    }
     
     .brand__title {
         position: relative;
@@ -20,6 +43,25 @@
             height: 104px;
             background-color: $dark-pink;
             left: -37px;
+
+            @include tablet {
+                width: 9px;
+                height: 60px;
+                left: -24px;
+            }
+
+            @include mobile {
+                height: 63px;
+                left: -21px;
+            }
+        }
+
+        @include tablet {
+            @include font(32px, 32px, 900, normal);
+        }
+
+        @include mobile {
+            @include font(35px, 35px, 900, normal);
         }
     }
     
@@ -30,6 +72,14 @@
 
         &--pink {
             color:$dark-pink;
+        }
+
+        @include tablet {
+            @include font(19px, 24px, 700, normal);
+        }
+
+        @include mobile {
+            @include font(18px, 24px, 700, normal);
         }
     }
 }
