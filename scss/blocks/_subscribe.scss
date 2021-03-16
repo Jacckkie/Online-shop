@@ -1,12 +1,17 @@
 .subscribe {
     min-height:448px;
     background-image:url(../img/photo-subscribe.png);
+    background-size: cover;
 
     .subscribe__content {
         min-height:448px;
         display:flex;
         justify-content:space-between;
         align-items:center;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     .subscribe__info {
@@ -14,6 +19,10 @@
         width:360px;
         @include flex-center();        
         flex-direction:column;
+
+        @include tablet {
+            margin: 64px 0 48px;
+        }
     }
     
     .subscribe__text {
@@ -39,12 +48,16 @@
     .subscribe__form {
         position:relative;
         width:356px;
+
+        @include tablet {
+            margin: 0 0 140px;
+        }
     }
     
     .subscribe__input {    
         width: 73%;
         height: 49px;
-        border-color: transparent;
+        border: 0px;
         border-radius: 30px 0 0 30px;
         background-color: $input-bg-grey;
         padding-left: 22px;
@@ -53,9 +66,9 @@
     .subscribe__button {
         position: absolute;
         right: -7px;
-        bottom: 1px;
-        height: 52px;
-        border-color: transparent;
+        bottom: 0px;
+        height: 51px;
+        border: 0px;
         border-radius: 0 30px 30px 0;
         padding: 16px;
         background-color: $dark-pink;
@@ -63,5 +76,6 @@
         line-height: 17px;
         color: $white;
     }
-}
 
+
+}
