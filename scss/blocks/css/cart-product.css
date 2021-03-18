@@ -1,0 +1,23 @@
+.cart-product {
+  margin: 96px 128px 128px 0;
+}
+
+.cart-product__item {
+  position: relative;
+  display: flex;
+  width: 652px;
+  min-height: 306px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  margin: 0 0 40px;
+}
+
+.cart-product__description {
+  margin: 22px 31px 62px;
+}
+
+.cart-product__x {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+/*# sourceMappingURL=cart-product.css.map */

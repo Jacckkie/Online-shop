@@ -1,3 +1,5 @@
+// registration
+
 input,
 label {
     display: block;
@@ -19,4 +21,14 @@ input {
     width: 17px;
     height: 17px;
     margin: 0 10px;
+}
+
+// cart
+
+
+.cart-product__input {
+    width: 43px;
+    height: 24px;
+    border: 1px solid $line-grey;
+    margin: 0 0 0 24px;
 }
