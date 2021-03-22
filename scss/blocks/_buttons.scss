@@ -12,6 +12,10 @@
         @include tablet {
             margin:0 auto 65px;
         }
+
+        @include mobile {
+            margin: 25px auto 96px;
+        }
     }
 
     .button__button:hover {
@@ -45,3 +49,64 @@
     outline: none;
 }
 
+.total-price__button {
+    height: 50px;
+    width: 100%;
+    background-color: $white;
+    color: $dark-pink;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: 1px solid $dark-pink;
+    outline: none;
+}
+
+.total-price__button:hover {
+    height: 50px;
+    width: 100%;
+    background-color: $dark-pink;
+    color: $white;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+// cart-buttons
+
+.cart-buttons {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 0;
+}
+
+.clear {
+    width: 234px;
+    height: 49px;
+    border: 1px solid $input-border-gray;
+    background-color:transparent;
+    @include font(14px, 17px, 300, normal);
+    color: $black;
+    text-transform: uppercase;
+}
+
+.continue {
+    border: 1px solid $input-border-gray;
+    padding: 16px 39px 15px;
+    background-color:transparent;
+    @include font(14px, 17px, 400, normal);
+    color: $black;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.adress__button {
+    border: 1px solid $input-border-gray;
+    padding: 16px 39px 15px;
+    background-color:transparent;
+    @include font(14px, 17px, 300, normal);
+    color: $black;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin: 24px 0 0;
+}

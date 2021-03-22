@@ -12,6 +12,7 @@
         right: 0;
         bottom: -765px;
         min-height: 764px;
+        z-index: 100;
     }
 
     &__navigation-wrp:hover {
@@ -23,8 +24,6 @@
     }
 
     &__navigation {
-        // display: block;
-        // display:none; 
         position: absolute;       
         background-color: $white;
         width: 232px;
