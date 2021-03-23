@@ -1,0 +1,43 @@
+legend {
+    @include font(16px, 19px, 300, normal);
+    color: $dark-blue;
+}
+
+fieldset {
+    padding: 20.5px 0 57.5px;
+}
+
+.registration {
+    padding: 64px 0 96px;
+    display: flex;
+    justify-content: space-between;
+
+    .registartion__description {
+        @include font(13px, 16px, 300, normal);
+        color: $placeholder_text;
+        width: 359px;
+        margin: 15.5px 0 39px;
+    }
+
+.gender-wrp {
+    width: 359px;
+    height: 44px;
+    display: flex;
+    padding: 31px 0 33px;
+
+    .gender-wrp__male {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+    
+    .gender-wrp__female {
+        display: flex;
+        align-items: center;
+    }
+
+    .gender-wrp__label {
+        @include font(11px, 13px, 300, normal);
+    }
+}
+}

@@ -1,0 +1,40 @@
+.features {
+    background-color:$features-bg; 
+
+    .features__list {
+        display:flex;
+        justify-content:space-between;    
+        align-items:center;
+        min-height:341px;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 48px 0 64px;
+        }
+    }
+    
+    .features__item {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:360px;
+
+        @include tablet {
+            margin: 0 0 48px;
+        }
+    }
+    
+    .features__name {
+        margin:28px 0 16px;
+        font-size:19.96px;
+        line-height:24px;
+        color:$features-name-grey;
+    }
+    
+    .features__paragraph {
+        @include font(13.972px, 17px, 300, normal);
+        text-align:center;
+        color:$features-name-grey;
+    }  
+}
+

@@ -1,0 +1,121 @@
+.offers__list {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:65px 0 96px;
+
+    @include tablet {
+        margin:20px 0 123px;  
+    }
+
+    @include mobile {
+        margin:64px 0 32px; 
+    }
+
+    .offers__item {
+        width:32%;
+        margin:0 0 30px;
+        background-color:$brown;        
+        flex-direction:column;
+        background-size: cover;         
+
+        @include flex-center();
+
+        @include tablet {
+            width: 32%;
+            margin:0 0 19px;                       
+        }
+
+        @include mobile {
+            width: 100%;
+            height: auto;
+            margin: 0 0 32px;
+        }
+
+        &--women {
+            background-image:url(../img/1-for-women.png);
+            min-height: 260px;
+            background-repeat:no-repeat;
+
+            @include tablet {
+                min-height: 168px;;
+            }
+
+            @include mobile {
+                height: 247px;
+            }
+            
+        }
+
+        &--men {
+            background-image:url(../img/2-for-men.png);
+            min-height: 260px;
+            background-repeat:no-repeat;
+
+            @include tablet {
+                min-height: 168px;;
+        }
+            @include mobile {
+                height: 247px;
+            }
+    }
+
+        &--kids {
+            background-image:url(../img/3-for-kids.png);
+            min-height: 260px;
+            background-repeat:no-repeat;
+
+            @include tablet {
+                min-height: 168px;;
+        }
+        @include mobile {
+            height: 247px;
+        }
+    }
+
+        &--accesories {
+            background-image:url(../img/4-accesories.png);
+            min-height:180px;
+            background-repeat:no-repeat;
+            width:100%;
+            margin:0;
+
+            @include tablet {
+                min-height: 116px;
+            }
+            @include mobile {
+                height: 111px;
+            }
+        }
+
+        &--heading {   
+            width: 100%; 
+            text-align:center;
+            color:$white;
+            text-transform:uppercase;
+            height:24px;
+            margin:0;
+            background:transparent;
+
+            @include tablet {
+                @include font (16px, 19px, 400, normal);
+                height: 19px;
+            }
+        }
+
+        &--paragraph {
+            width: 100%;
+            @include font(24px, 29px, 700, normal);
+            text-align:center;
+            color:$dark-pink;
+            text-transform:uppercase;
+            height: 29px;
+            margin:0;
+            background:transparent;
+
+            @include tablet {
+                
+            }
+        }
+    }
+}

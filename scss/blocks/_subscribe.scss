@@ -1,0 +1,94 @@
+.subscribe {
+    min-height:448px;
+    background-image:url(../img/photo-subscribe.png);
+    background-size: cover;
+
+    .subscribe__content {
+        min-height:448px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+    
+    .subscribe__info {
+        min-height:225px;
+        width:360px;
+        @include flex-center();        
+        flex-direction:column;
+
+        @include tablet {
+            margin: 64px 0 48px;
+        }
+    }
+    
+    .subscribe__text {
+        @include font(20px, 24px, 400, italic);        
+        text-align:center;
+        color:$features-bg;
+        margin:30px 0 0;
+
+        @include mobile {
+            @include font(18px, 22px, 400, italic); 
+        }
+    }
+    
+    .subscribe__heading {
+        @include font(24px, 40px, 700, normal);        
+        text-align:center;
+        text-transform: uppercase;
+    }
+    
+    .subscribe__description {
+        @include font(18px, 30px, 400, normal);       
+        text-align:center;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+
+        @include mobile {
+            @include font(14px, 21px, 400, normal)
+        }
+    }
+    
+    .subscribe__form {
+        position:relative;
+        width:356px;
+
+        @include tablet {
+            margin: 0 0 140px;
+        }
+
+        @include mobile {
+            width: 95%;
+            margin: 0 0 109px;
+        }
+    }
+    
+    .subscribe__input {    
+        width: 73%;
+        height: 49px;
+        border: 0px;
+        border-radius: 30px 0 0 30px;
+        background-color: $input-bg-grey;
+        padding-left: 22px;
+    }
+    
+    .subscribe__button {
+        position: absolute;
+        right: -7px;
+        bottom: 0px;
+        height: 51px;
+        border: 0px;
+        border-radius: 0 30px 30px 0;
+        padding: 16px;
+        background-color: $dark-pink;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+    }
+
+
+}

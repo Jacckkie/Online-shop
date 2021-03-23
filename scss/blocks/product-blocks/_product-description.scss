@@ -1,0 +1,87 @@
+.product-description {
+    position: relative;
+    margin-bottom: 129px;
+}
+
+.product-description__box {        
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $line-grey;
+    background-color: $white;
+    margin-top: -64px;
+    padding: 64px 249px;
+
+    .product-category {
+        @include font(14px, 17px, 300, normal);
+        color: $dark-pink;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+
+    .product-divider {
+        height: 3px;
+        width: 63px;
+        background-color: $dark-pink;
+        border: none;
+        margin: 0 0 12px;
+    }
+
+    .product-heading {
+        @include font(18px, 22px, 300, normal);
+        color: $text-dark-grey;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 48px;
+    }
+
+    .product-description__paragraph {
+        @include font(14px, 17px, 300, normal);
+        color: $text-grey;
+        text-align: center;
+        width: 555px;
+        margin: 0 0 32px;
+    }
+
+    .product-description__price {
+        @include font(24px, 29px, 300, normal);
+        color: $dark-pink;
+        text-align: center;
+        margin: 0 0 65px;
+    }
+
+    .product-divider__grey {
+        height: 1px;
+        width: 100%;
+        background-color: $line-grey;
+        border: none;
+        margin: 0 0 65px;
+    }
+
+    .select-box {
+        margin: 0 0 49px;
+        display: flex;
+        justify-content: space-between;
+        width: 58%;
+    }
+
+    #color {
+        border: none;
+        @include font(14px, 17px, 400, normal);
+        text-transform: uppercase;
+    }
+
+    #size {
+        border: none;
+        @include font(14px, 17px, 400, normal);
+        text-transform: uppercase;
+    }
+
+    #quantity {
+        border: none;
+        @include font(14px, 17px, 400, normal);
+        text-transform: uppercase;
+    }
+}

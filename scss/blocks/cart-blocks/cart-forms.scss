@@ -1,0 +1,52 @@
+.cart-forms {
+    margin: 113px 0 0 ;
+}
+
+.cart-legend {
+    @include font(16px, 19px, 300, normal);
+    text-transform: uppercase;
+}
+
+
+.total-price {
+    background-color: $breadcrumb-gray;
+    padding: 39px 34px 42px;
+    .total-price__box {
+        width: 100%;
+    
+    }
+    
+    .total-price__sub {
+    @include font(11px, 13px, 400, normal);
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0 0 12px;
+    }
+    
+    .total-price__grand {
+        @include font(16px, 19px, 300, normal);
+        text-transform: uppercase;
+        text-align: right;
+        margin: 0 0 21px;
+    }
+    
+    .total-price__color {
+        @include font(16px, 19px, 700, normal);
+        color: $dark-pink;
+        margin: 0 0 0 20px;
+    }
+
+    .total-price__margin {
+        margin: 0 0 0 20px;
+    }
+    
+    .total-price__line {
+        width: 100%;
+        margin: 21px 0 17px;
+        color: $line-grey;
+    }
+}
+
+
+
+

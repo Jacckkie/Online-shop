@@ -1,0 +1,163 @@
+.button {
+    display:flex;
+    justify-content:center;
+    .button__button {
+        color:$dark-pink;
+        border:1px solid $dark-pink;
+        background-color:$white;
+        padding:14.5px 38.5px;
+        margin:0 auto 95px;
+        outline: none;
+
+        @include tablet {
+            margin:0 auto 65px;
+        }
+
+        @include mobile {
+            margin: 25px auto 96px;
+        }
+    }
+
+    .button__button:hover {
+        color:$white;
+        border:1px solid $dark-pink;
+        background-color:$dark-pink;
+        padding:14.5px 38.5px;
+        margin:0 auto 95px;
+    }
+}
+
+.product__button {
+    position: absolute;
+    border: 1px solid $white;
+    width: 138px;
+    height:43px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    color: $white;    
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.product__button:before {
+    content: '';
+    width: 26px;
+    height: 24px;
+    background-image: url(../img/purchase-icon.svg);
+    margin-right: 11px;
+}
+
+// registration button
+
+.join {
+    height: 50px;
+    width: 167px;
+    background-color: $white;
+    color: $dark-pink;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: 1px solid $dark-pink;
+    outline: none;
+}
+
+.join:hover {
+    height: 50px;
+    width: 167px;
+    background-color: $dark-pink;
+    color: $white;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+// cart-buttons
+
+.total-price__button {
+    height: 50px;
+    width: 100%;
+    background-color: $white;
+    color: $dark-pink;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: 1px solid $dark-pink;
+    outline: none;
+}
+
+.total-price__button:hover {
+    height: 50px;
+    width: 100%;
+    background-color: $dark-pink;
+    color: $white;
+    padding: 16px 29px 17px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.cart-buttons {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 0;
+}
+
+.clear {
+    width: 234px;
+    height: 49px;
+    border: 1px solid $input-border-gray;
+    background-color:transparent;
+    @include font(14px, 17px, 300, normal);
+    color: $black;
+    text-transform: uppercase;
+}
+
+.continue {
+    border: 1px solid $input-border-gray;
+    padding: 16px 39px 15px;
+    background-color:transparent;
+    @include font(14px, 17px, 400, normal);
+    color: $black;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.adress__button {
+    border: 1px solid $input-border-gray;
+    padding: 16px 39px 15px;
+    background-color:transparent;
+    @include font(14px, 17px, 300, normal);
+    color: $black;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin: 24px 0 0;
+}
+
+// product-page button
+
+.product__button--product-page {    
+    border: 1px solid $dark-pink;
+    width: 138px;
+    height:43px;    
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    color: $dark-pink;
+    background-color: transparent;    
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.product__button--product-page:before {
+    content: '';
+    width: 26px;
+    height: 24px;
+    background-image: url(../img/purchase-icon-pink.svg);
+    margin-right: 11px;
+}
