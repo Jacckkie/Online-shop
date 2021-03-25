@@ -1,0 +1,106 @@
+
+.filter-box {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(1, 20px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 51px 0 64px;
+}
+.catalog__filter {    
+    display: flex;
+    align-items: center;
+}
+.catalog__filter::after {
+    content: '';
+    width: 15px;
+    height: 10px;
+    background-image: url(../img/filter.svg);
+    margin: 0 0 0 11px;
+}
+
+.catalog__box {
+    display: grid;    
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 581px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    .catalog__filter {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .select-box {
+        grid-column-start: 2;
+        grid-column-end: 3; 
+    }
+    .catalog_empty {
+        background-color: transparent;
+    }
+
+    .catalog__item {  
+
+        width:360px;    
+        background-color:$grey;
+        box-sizing:border-box;        
+
+        @include tablet {
+            width: 49%;
+            min-height: 50%;
+            margin: 0 0 16px;
+        }
+
+        @include mobile {
+            width: 100%;
+            height: auto;
+        }
+    
+        .catalog__item-wrapper {
+            position: relative;            
+            height: 420px;
+            margin:0 0 24px;
+
+            @include tablet {
+                height: 62%
+            }
+
+            .catalog__img {
+                    @include tablet {
+                    width: 100%;
+                }          
+
+        }
+
+        
+    
+    }
+    .catalog__name {
+        font-size:13px;
+        line-height:16px;
+        text-align:left;
+        color:$black;
+        text-transform:uppercase;
+        margin:0 18px;
+    }
+    
+    .catalog__paragraph--card {
+        @include font(14px, 17px, 300, normal);
+        color:$text-dark-grey;
+        text-align:left;
+        width:315px;
+        margin:13px 18px 18px;
+
+        @include tablet {
+            width: 85%;
+        }
+    }
+    
+    .catalog__price {
+        color:$dark-pink;
+        margin: 0 18px 20px;
+    }
+
+    }
+
+}
